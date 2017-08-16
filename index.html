@@ -2,40 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="styles/layout.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="styles/vendor/normalize.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/modules.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joseph Kim</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li id="name">Joseph Kim</li>
-        <li>GitHub</li>
-      </ul>
-    </nav>
 
-    <div id="about">
+    <header>
+      <nav>
+        <h1>Joseph Kim</h1>
+        <i class="fa fa-bars" style="font-size: 3em"></i>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about">
       <h2>About</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    </section>
 
-    <div id="skills">
+    <section class="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-      </ul>
-    </div>
+      <article>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+        </ul>
+      </article>
+    </section>
 
-    <div id="projects">
+    <section class="projects">
       <h2>Sample Projects</h2>
       <div id="project-slides">
+        <!-- <img class="mySlides" src="" />
         <img class="mySlides" src="" />
         <img class="mySlides" src="" />
-        <img class="mySlides" src="" />
-        <img class="mySlides" src="" />
+        <img class="mySlides" src="" /> -->
       </div>
-    </div>
+    </section>
   </body>
 </html>

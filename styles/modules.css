@@ -1,0 +1,50 @@
+h1 {
+  margin-left: 1em;
+  font-size: 1.5em;
+  color: white;
+}
+
+nav ul {
+  display: none;
+}
+
+header {
+  background-color: navy;
+}
+
+.about h2 {
+  margin-left: 1em;
+  font-size: 1em;
+}
+
+.about p {
+  margin: 2em;
+  padding: 0.5em;
+  text-align: justify;
+  border: 2px solid black;
+}
+
+.skills h2 {
+  margin-left: 1em;
+  font-size: 1em;
+}
+
+.skills article {
+  margin: 2em;
+  padding: 0.5em;
+  border: 2px solid black;
+}
+
+.projects h2 {
+  margin-left: 1em;
+  font-size: 1em;
+}
+
+#project-slides {
+  /*placeholder values until images of projects are added later*/
+  height: 300px;
+  width: 300px;
+  margin: 2em auto;
+  padding: 0.5em;
+  border: 2px solid black;
+}
