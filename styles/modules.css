@@ -4,7 +4,7 @@ h1 {
   color: white;
 }
 
-nav ul {
+#tabs li {
   display: none;
 }
 
@@ -49,17 +49,17 @@ header {
   border: 2px solid black;
 }
 
-i {
-  float: right;
-}
-
 @media screen and (min-width:640px) {
-  i {
-    visibility: hidden;
+
+  #tabs li {
+    display: inline;
+    font-size: 1em;
+    margin: 0 1em;
+    color: white;
   }
 
-  nav ul,li{
-    display:inline  ;
+  i {
+    visibility: hidden;
   }
 
 }
