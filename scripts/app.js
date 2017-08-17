@@ -13,7 +13,8 @@ portfolio.handle = function() {
 
 portfolio.handleClick = function() {
   $('i').on('click', function() {
-    $('.menu').toggle('500');
+    $('#tabs li').toggle();
+    // $('#tabs li').css('display', 'inline');
   });
 };
 
