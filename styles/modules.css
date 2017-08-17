@@ -55,6 +55,9 @@ header {
     display: inline;
     font-size: 1em;
     margin: 0 1em;
+  }
+
+  a {
     color: white;
   }
 
