@@ -18,13 +18,13 @@ portfolio.handleClick = function() {
   });
 };
 
-portfolio.carousel = function() {
+portfolio.showCarousel = function() {
   var index = 0;
   var imgList = [$('#1'), $('#2'), $('#3')];
 
   $('#right-button').on('click', function() {
     index++;
-    $('.slide').hide();
+    $('section#carousel img').hide();
     if (index === 3) {
       index = 0;
     }
@@ -33,19 +33,19 @@ portfolio.carousel = function() {
 
   $('#left-button').on('click', function() {
     index--;
-    $('.slide').hide();
+    $('section#carousel img').hide();
     if (index === -1) {
       index = 2;
     }
     imgList[index].show();
   });
 
-  $('.slide').hide();
+  $('section#carousel img').hide();
   imgList[index].show();
 };
 
 $(document).ready(function() {
   portfolio.handle();
   portfolio.handleClick();
-  portfolio.carousel();
+  portfolio.showCarousel();
 });
