@@ -54,6 +54,27 @@ a {
   color: white;
 }
 
+#image-carousel {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#image-carousel ul {
+  width: 90%;
+  /*height: 30%;*/
+  padding: 0;
+  margin: 0;
+}
+
+#image-carousel ul li {
+  width: 30%;
+  /*height: 10%;*/
+  text-align: center;
+  list-style: none;
+  float: left;
+}
+
 @media screen and (min-width:640px) {
 
   #tabs li {
