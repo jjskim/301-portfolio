@@ -12,9 +12,14 @@ portfolio.handle = function() {
 };
 
 portfolio.handleClick = function() {
-  $('i').on('click', function() {
-    $('#tabs li').toggle();
-    $('#tabs li').css('display', 'inline');
+  $('a#icon').on('click', function() {
+    if ($('nav.topnav').hasClass('responsive')) {
+      $('nav.topnav').removeClass('responsive');
+    } else {
+      $('nav.topnav').addClass('responsive');
+    }
+    // $('#tabs li').toggle();
+    // $('#tabs li').css('display', 'inline');
   });
 };
 
