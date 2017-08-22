@@ -18,8 +18,6 @@ portfolio.handleClick = function() {
     } else {
       $('nav.topnav').addClass('responsive');
     }
-    // $('#tabs li').toggle();
-    // $('#tabs li').css('display', 'inline');
   });
 };
 
