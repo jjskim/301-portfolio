@@ -28,7 +28,7 @@ portfolio.showCarousel = function() {
     if (index === 3) {
       index = 0;
     }
-    imgList[index].show();
+    imgList[index].fadeIn();
   });
 
   $('#left-button').on('click', function() {
@@ -37,7 +37,7 @@ portfolio.showCarousel = function() {
     if (index === -1) {
       index = 2;
     }
-    imgList[index].show();
+    imgList[index].fadeIn();
   });
 
   $('section#carousel img').hide();
