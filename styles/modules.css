@@ -95,4 +95,8 @@ a {
     display: none;
   }
 
+  .topnav a:not(:first-child) {
+    display: block;
+  }
+
 }
