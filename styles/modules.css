@@ -1,18 +1,3 @@
-/*h1 {
-  margin-left: 1em;
-  font-size: 1.5em;
-  color: white;
-}
-
-#tabs li {
-  display: none;
-  margin: 0 1em;
-}
-
-header {
-  background-color: navy;
-}*/
-
 .about h2 {
   margin-left: 1em;
   font-size: 1em;
@@ -63,7 +48,7 @@ a {
   display: none;
 }
 
-.topnav a#icon {
+.topnav i#icon {
   float: right;
   display: block;
 }
@@ -78,7 +63,7 @@ a {
   top: 0;
 }
 
-.topnav.responsive a {
+.topnav.responsive a, i {
   float: none;
   display: block;
   text-align: left;
@@ -89,35 +74,25 @@ a {
   background-color: #333;
 }
 
-.topnav a {
+.topnav a, i {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 2% 2%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.25em;
 }
 
-.topnav a:hover {
+.topnav a:hover, i:hover {
   background-color: #ddd;
   color: black;
 }
 
 @media screen and (min-width:640px) {
 
-  .topnav #icon {
+  .topnav i#icon {
     display: none;
   }
-
-  /*#tabs li {
-    display: inline;
-    font-size: 1em;
-    margin: 0 1em;
-  }
-
-  i {
-    visibility: hidden;
-  }*/
 
 }

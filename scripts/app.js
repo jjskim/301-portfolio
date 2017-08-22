@@ -4,7 +4,7 @@ var portfolio = {};
 
 portfolio.handle = function() {
 
-  $('nav').on('click', 'li', function() {
+  $('nav').on('click', 'a', function() {
     $('section').hide();
     var $showThis = $(this).data('content');
     $('section.' + $showThis).fadeIn();
@@ -12,7 +12,7 @@ portfolio.handle = function() {
 };
 
 portfolio.handleClick = function() {
-  $('a#icon').on('click', function() {
+  $('i#icon').on('click', function() {
     if ($('nav.topnav').hasClass('responsive')) {
       $('nav.topnav').removeClass('responsive');
     } else {
