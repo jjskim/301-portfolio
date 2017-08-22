@@ -4,7 +4,7 @@ var portfolio = {};
 
 portfolio.handle = function() {
 
-  $('nav').on('click', 'li', function() {
+  $('nav').on('click', 'a', function() {
     $('section').hide();
     var $showThis = $(this).data('content');
     $('section.' + $showThis).fadeIn();
@@ -12,9 +12,12 @@ portfolio.handle = function() {
 };
 
 portfolio.handleClick = function() {
-  $('i').on('click', function() {
-    $('#tabs li').toggle();
-    $('#tabs li').css('display', 'inline');
+  $('i#icon').on('click', function() {
+    if ($('nav.topnav').hasClass('responsive')) {
+      $('nav.topnav').removeClass('responsive');
+    } else {
+      $('nav.topnav').addClass('responsive');
+    }
   });
 };
 
@@ -28,7 +31,7 @@ portfolio.showCarousel = function() {
     if (index === 3) {
       index = 0;
     }
-    imgList[index].show();
+    imgList[index].fadeIn();
   });
 
   $('#left-button').on('click', function() {
@@ -37,7 +40,7 @@ portfolio.showCarousel = function() {
     if (index === -1) {
       index = 2;
     }
-    imgList[index].show();
+    imgList[index].fadeIn();
   });
 
   $('section#carousel img').hide();
